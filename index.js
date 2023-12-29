@@ -40,7 +40,7 @@ app.use(session({
         maxAge : (1000 * 60 * 100)
     },
     store:MongoStore.create({
-        mongoUrl: 'mongodb+srv://wankhadeabhi3:abhi123456@cluster0.jhzupam.mongodb.net/review-system?retryWrites=true&w=majority',
+        mongoUrl: 'mongodb+srv://cossin322:mynameisavnish@cluster0.hrxkika.mongodb.net/employee?retryWrites=true&w=majority',
         autoRemove : 'disabled',
     }, function(err){
         console.log(err || 'connect-mongodb setup');
