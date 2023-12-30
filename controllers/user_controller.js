@@ -1,4 +1,3 @@
-
 const User = require('../models/users');
 const Review = require('../models/review');
 
@@ -67,9 +66,8 @@ module.exports.destroySession = function(req, res) {
 module.exports.login = function(req, res){
     // if user is authenticated then not able to open login panel
     if(req.isAuthenticated()){
-        return res.render('home', {
-            title : "ERS | Home"
-        });
+        return res.redirect('/')
+    
     }
     return res.render('login', {
         title : "ERS | Login"
